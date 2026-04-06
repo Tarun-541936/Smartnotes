@@ -1,0 +1,17 @@
+# Create .gitignore that covers ALL future weeks
+$ cat > .gitignore << 'EOF'
+# Week 2: Python
+venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.ipynb_checkpoints/
+
+# Week 3: Docker
+.dockerignore
+
+# General
+.env
+*.log
+.DS_Store
+EOF
