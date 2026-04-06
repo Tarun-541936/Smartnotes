@@ -1,0 +1,7 @@
+ { "app_name": "SmartNotes",
+  "version": "0.1.0",
+  "notes_dir": "notes",
+  "ai_provider": "cloud",
+  "ai_model": "llama-3.1-8b-instant",
+  "cloud_provider": "groq",
+  "port": 5000}
