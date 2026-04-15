@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartNotes</title>
+</head>
+<body>
+
+<h1>📒 SmartNotes</h1>
+
+{% if notes %}
+    {% for note in notes %}
+        <div style="border:1px solid #000; padding:10px; margin:10px;">
+            <h2>{{ note["title"] }}</h2>
+            <p>{{ note["content"] }}</p>
+
+            <p>
+                Tags:
+                {% for tag in note["tags"] %}
+                    <span>#{{ tag }}</span>
+                {% endfor %}
+            </p>
+        </div>
+    {% endfor %}
+{% else %}
+    <p>No notes found</p>
+{% endif %}
+
+</body>
+</html>
