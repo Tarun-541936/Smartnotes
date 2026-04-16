@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    ports:
+      - "5002:5000"
+    volumes:
+      - ./notes:/app/notes
+      - ./notes_db.json:/app/notes_db.json
+    environment:
+      - FLASK_ENV=development
