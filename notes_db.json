@@ -7,7 +7,8 @@
       "good",
       "kindhearted"
     ],
-    "created": "2026-04-08T15:01:59.471470"
+    "created": "2026-04-08T15:01:59.471470",
+    "cluster": 0
   },
   {
     "id": 2,
@@ -18,7 +19,8 @@
       "cunning",
       "innocent"
     ],
-    "created": "2026-04-15T16:11:51.595459"
+    "created": "2026-04-15T16:11:51.595459",
+    "cluster": 0
   },
   {
     "id": 3,
@@ -27,6 +29,19 @@
     "tags": [
       "demo"
     ],
-    "created": "2026-04-15T16:28:20.072770"
+    "created": "2026-04-15T16:28:20.072770",
+    "cluster": 0
+  },
+  {
+    "id": 4,
+    "title": "harini",
+    "content": "she is rude",
+    "tags": [
+      "bad",
+      "very bad",
+      "very very bad"
+    ],
+    "created": "2026-04-16T16:37:39.571112",
+    "cluster": 1
   }
 ]

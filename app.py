@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request, render_template
 import json
 from notes_manager import NotesManager
+from smart_sort import run_clustering
 
 app = Flask(__name__)
 
@@ -37,6 +38,12 @@ def create_note():
 def search():
     tag = request.args.get("tag")
     return jsonify(manager.search_by_tag(tag))
+
+
+@app.route("/api/cluster")
+def cluster_notes():
+    result = run_clustering()
+    return jsonify(result)
 
 
 if __name__ == "__main__":
